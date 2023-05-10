@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7ow-aZ-uiE">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cloudy_s_Trivia" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,13 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJl-x1-cDB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJl-x1-cDB">
                                 <rect key="frame" x="122" y="400" width="151" height="30"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <color key="textColor" systemColor="tintColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy's Trivia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89q-z0-sFy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cloudy's Trivia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89q-z0-sFy">
                                 <rect key="frame" x="84" y="438" width="226" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jOG-vR-fNt"/>
@@ -31,7 +31,7 @@
                                 <color key="textColor" systemColor="tintColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDi-5J-fT6">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDi-5J-fT6">
                                 <rect key="frame" x="104" y="500" width="184" height="39"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule" showsActivityIndicator="YES">
@@ -49,7 +49,7 @@
                                     <action selector="startTrivia" destination="BYZ-38-t0r" eventType="touchUpInside" id="7uI-pQ-FmB"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cloudymain" translatesAutoresizingMaskIntoConstraints="NO" id="Dkx-SF-SWS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cloudymain" translatesAutoresizingMaskIntoConstraints="NO" id="Dkx-SF-SWS">
                                 <rect key="frame" x="54" y="182" width="287" height="210"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="210" id="lJk-to-WPj"/>
@@ -82,15 +82,16 @@
                             <constraint firstItem="bJl-x1-cDB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="ydr-jt-A8M"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="homekit" catalog="system" id="ji6-HG-eFx"/>
                     <connections>
                         <outlet property="mainImageView" destination="Dkx-SF-SWS" id="ebX-X0-hhS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="83" y="-2"/>
+            <point key="canvasLocation" x="1008.3969465648854" y="-2.1126760563380285"/>
         </scene>
-        <!--Trivia View Controller-->
+        <!--Play-->
         <scene sceneID="1vL-Ho-QHw">
             <objects>
                 <viewController storyboardIdentifier="trivia" id="dYZ-Kq-Ylk" customClass="TriviaViewController" customModule="Cloudy_s_Trivia" customModuleProvider="target" sceneMemberID="viewController">
@@ -108,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aqT-ou-2gn">
-                                <rect key="frame" x="0.0" y="319" width="393" height="499"/>
+                                <rect key="frame" x="0.0" y="319" width="393" height="450"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="N77-7Y-6k9">
@@ -149,6 +150,7 @@
                             <constraint firstItem="1Ux-AX-Ivh" firstAttribute="bottom" secondItem="aqT-ou-2gn" secondAttribute="bottom" id="qsR-zK-mgP"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Play" selectedImage="play" catalog="system" id="4sr-8Z-qHa"/>
                     <connections>
                         <outlet property="label" destination="FHt-GQ-dDG" id="doD-Ki-U5q"/>
                         <outlet property="table" destination="aqT-ou-2gn" id="FV3-S6-dx9"/>
@@ -156,9 +158,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tt-nB-fb7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913.74045801526711" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1840.4580152671756" y="-2.1126760563380285"/>
         </scene>
-        <!--End View Controller-->
+        <!--Bye-->
         <scene sceneID="Sxg-uE-tjA">
             <objects>
                 <viewController storyboardIdentifier="end" id="Jmi-vd-hlg" customClass="EndViewController" customModule="Cloudy_s_Trivia" customModuleProvider="target" sceneMemberID="viewController">
@@ -176,10 +178,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudymain" translatesAutoresizingMaskIntoConstraints="NO" id="jBJ-xq-cdv">
-                                <rect key="frame" x="63" y="351" width="267" height="279"/>
+                                <rect key="frame" x="63" y="351" width="267" height="230"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wes-k7-QnB">
-                                <rect key="frame" x="16" y="767" width="361" height="35"/>
+                                <rect key="frame" x="16" y="718" width="361" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Play Again?"/>
                                 <connections>
@@ -205,6 +207,7 @@
                             <constraint firstItem="lfG-y4-dMj" firstAttribute="leading" secondItem="ADC-bK-p6C" secondAttribute="leading" constant="10" id="zbW-Lr-AGa"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Bye" image="Home" selectedImage="arrowshape.right.fill" catalog="system" id="BeU-4m-aLY"/>
                     <navigationItem key="navigationItem" id="aMM-Ii-Vdy"/>
                     <connections>
                         <outlet property="endImage" destination="jBJ-xq-cdv" id="LFd-Nd-6xg"/>
@@ -213,13 +216,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9BT-WB-p4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658.7786259541983" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="2585.4961832061067" y="-2.1126760563380285"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Erw-bT-Etc">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7ow-aZ-uiE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u4t-BH-FoJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="IYx-b6-dbb"/>
+                        <segue destination="Jmi-vd-hlg" kind="relationship" relationship="viewControllers" id="6Aq-az-4yP"/>
+                        <segue destination="dYZ-Kq-Ylk" kind="relationship" relationship="viewControllers" id="0iF-iU-BOb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cJ-wH-DZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570" y="-773"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Home" width="128" height="128"/>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
         <image name="cloudymain" width="1422.3333740234375" height="1422.3333740234375"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="play" catalog="system" width="117" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
